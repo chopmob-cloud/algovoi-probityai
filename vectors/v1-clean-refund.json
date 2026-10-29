@@ -1,0 +1,35 @@
+{
+  "approved_request": {
+    "action": "refund",
+    "amount": "12.50",
+    "currency": "USD",
+    "expiry": "2026-10-29T12:00:00Z",
+    "nonce": "req-nonce-01",
+    "op_id": "op-A",
+    "payee": "acct:alice"
+  },
+  "expected": {
+    "overall": "ACCEPT",
+    "primary_axis": null
+  },
+  "name": "v1-clean-refund",
+  "observed_effect": {
+    "amount": "12.50",
+    "applied_count": 1,
+    "balance_after": "112.50",
+    "balance_before": "100.00",
+    "currency": "USD",
+    "observed_at": "2026-10-29T11:00:00Z",
+    "op_id": "op-A",
+    "payee": "acct:alice",
+    "status": "committed"
+  },
+  "receipt": {
+    "effect_digest": "f03e43c971f2a2a9ddc86582815d623a90337c43b32a711685dd6cd3bfa0894c",
+    "issued_at": "2026-10-29T11:00:01Z",
+    "nonce": "rcpt-01",
+    "op_id": "op-A",
+    "request_digest": "20bf7efbba897255d05f8682e938d378882d8b367b8766b7e00f5163d3bad9ea",
+    "sig": "cdd584d1f69acb9135ca4eac8a93811b7db2d238ccb456709f43c42cb4419304c036758aa01f3295a0b834c4ea80cf3008351c060a7c8f04d7f4b6ee4ff27e06"
+  }
+}

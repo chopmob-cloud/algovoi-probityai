@@ -1,0 +1,35 @@
+{
+  "approved_request": {
+    "action": "refund",
+    "amount": "12.50",
+    "currency": "USD",
+    "expiry": "2026-10-29T12:00:00Z",
+    "nonce": "req-nonce-01",
+    "op_id": "op-A",
+    "payee": "acct:alice"
+  },
+  "expected": {
+    "overall": "REJECT",
+    "primary_axis": "effect_binding"
+  },
+  "name": "v8-operation-identity",
+  "observed_effect": {
+    "amount": "12.50",
+    "applied_count": 1,
+    "balance_after": "112.50",
+    "balance_before": "100.00",
+    "currency": "USD",
+    "observed_at": "2026-10-29T11:00:00Z",
+    "op_id": "op-B",
+    "payee": "acct:alice",
+    "status": "committed"
+  },
+  "receipt": {
+    "effect_digest": "e1d9d0fa7705dd8776ca5950749e69812f10d4a30da49296df085d19caa42895",
+    "issued_at": "2026-10-29T11:00:01Z",
+    "nonce": "rcpt-01",
+    "op_id": "op-A",
+    "request_digest": "20bf7efbba897255d05f8682e938d378882d8b367b8766b7e00f5163d3bad9ea",
+    "sig": "e53f9d204ad0e2a9eaed12e4ebda799a5300095d277eccfefbc2bd0467c7841cf599d373a725c3a6c1ecbd1ee49add2d4d0ceb0c94b33f56b691276487e58b08"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "approved_request": {
+    "action": "refund",
+    "amount": "12.50",
+    "currency": "USD",
+    "expiry": "2026-10-29T12:00:00Z",
+    "nonce": "req-nonce-01",
+    "op_id": "op-A",
+    "payee": "acct:alice"
+  },
+  "expected": {
+    "overall": "REJECT",
+    "primary_axis": "completion"
+  },
+  "name": "v7-failed-not-certified",
+  "observed_effect": {
+    "amount": "12.50",
+    "applied_count": 1,
+    "balance_after": "100.00",
+    "balance_before": "100.00",
+    "currency": "USD",
+    "observed_at": "2026-10-29T11:00:00Z",
+    "op_id": "op-A",
+    "payee": "acct:alice",
+    "status": "failed"
+  },
+  "receipt": {
+    "effect_digest": "2c7871d06201d4f823ff86712640498a1db759b1d1646dac15e5368770123225",
+    "issued_at": "2026-10-29T11:00:01Z",
+    "nonce": "rcpt-01",
+    "op_id": "op-A",
+    "request_digest": "20bf7efbba897255d05f8682e938d378882d8b367b8766b7e00f5163d3bad9ea",
+    "sig": "26674df13552feb991365e65e693c20b56189949c69788c8cc2815a7c42ae7c3c38605c6f621bf19fba0eb7945d11ec938580df62bd876b11a4dd9fc688edf09"
+  }
+}
