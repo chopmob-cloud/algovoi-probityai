@@ -1,3 +1,21 @@
 __pycache__/
 *.pyc
 vectors_win/
+
+# Working documents (docgate): only documentation the repository needs to operate
+# is tracked. Plans, drafts, handovers, session notes and review reports stay local.
+PLAN-*.md
+PLAN.md
+*-DRAFT.md
+DRAFT-*.md
+PUBLIC-README.md
+HANDOVER*.md
+SESSION-*.md
+NOTES*.md
+TODO-*.md
+REVIEW-*.md
+AUDIT-*.md
+REPORT-*.md
+SCRATCH*.md
+*.local.md
+.ai-docs/
