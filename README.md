@@ -1,3 +1,5 @@
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+
 AlgoVoi offline verifier: refund and receipt binding
 
 This is a working check, not a proposal. It takes three records that any reader
